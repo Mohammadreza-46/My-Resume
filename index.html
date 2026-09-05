@@ -1,124 +1,324 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resume of Mohammad Reza Ansari, a young developer from Iran.">
-    <title>Mohammad Reza Ansari | Resume</title>
+    <title>Mohammad Reza | Ansari</title>
     <link rel="stylesheet" href="style.css">
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span>mr.dev</span>
+            <span class="badge">OPEN TO WORK</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="https://github.com/Mohammadreza-46/">GitHub</a>
+            <a href="#contact" class="btn-primary">Get In Touch</a>
+        </div>
+    </nav>
 </head>
 
 <body>
-    <header>
-        <h1>My Resume</h1>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#my-free-time">My Free Time</a></li>
-                <li><a href="#my-skills">My Skills</a></li>
-                <li><a href="#my-code">My Code</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <dl>
-                <dt>Full name</dt>
-                <dd>Mohammad Reza Ansari</dd>
-                <dt>City</dt>
-                <dd>Rafsanjan, Iran</dd>
-                <dt>Birthday</dt>
-                <dd><time datetime="2015-02-26">February 26, 2015</time></dd>
-            </dl>
-            <details>
-                <summary>Fun facts about me</summary>
-                <ul>
-                    <li>I love video games.</li>
-                    <li>I am learning to build a real API.</li>
+        <section class="hero" id="about">
+
+            <div class="hero-left">
+                <p class="eyebrow">WELCOME_TO_MY_PORTFOLIO</p>
+                <h1>Mohammad Reza <span class="highlight">Ansari</span></h1>
+                <p class="subtitle">Backend &amp; Python Enthusiast + Building APIs &amp; Exploring Game Dev</p>
+                <p class="hero-desc">
+                    Young, curious developer based in Rafsanjan. Driven by code
+                    architecture, relational databases, and real-time game worlds.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">Inspect My Project</a>
+                    <a href="https://github.com/Mohammadreza-46/" class="btn-secondary">GitHub</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-label">FOCUS</span>
+                        <span class="stat-value">Python &amp; Flask</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">BASED</span>
+                        <span class="stat-value">Rafsanjan</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">BORN</span>
+                        <span class="stat-value">Feb 20, 2015</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="code-window">
+                    <div class="code-window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">profile.json</span>
+                    </div>
+                    <pre class="code-body"><code>"name": "Mohammad Reza Ansari",
+"location": "Rafsanjan, IR",
+"status": "Learning to build a real API"</code></pre>
+                </div>
+            </div>
+
+        </section>
+        <section class="skills" id="skills">
+            <p class="eyebrow">// UNLEASHED COMPETENCIES</p>
+            <h2>My Tech Stack &amp; Skills</h2>
+            <p class="section-desc">
+                Technologies and developer environments mastered to assemble
+                clean APIs, query structured storage, and orchestrate interactive
+                game logic.
+            </p>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-card-top">
+                        <span class="skill-icon">🐍</span>
+                        <span class="skill-tag">CORE LANGUAGE</span>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Primary backend language for data structures, algorithmic automation, and application logic
+                        foundations.</p>
+                    <div class="skill-footer">
+                        <span>Proficiency &amp; Daily Use</span>
+                        <span>Active Master</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-top">
+                        <span class="skill-icon">⚡</span>
+                        <span class="skill-tag">API FRAMEWORK</span>
+                    </div>
+                    <h3>Flask</h3>
+                    <p>Lightweight microservices, RESTful route design, request dispatcher architecture, and JSON
+                        serialization.</p>
+                    <div class="skill-footer">
+                        <span>Route Dispatch &amp; Handlers</span>
+                        <span>In-depth</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-top">
+                        <span class="skill-icon">🗄️</span>
+                        <span class="skill-tag">PERSISTENCE</span>
+                    </div>
+                    <h3>Database</h3>
+                    <p>Relational schemas, SQL queries, entity relationship integrity, and persistent file storage for
+                        web sessions.</p>
+                    <div class="skill-footer">
+                        <span>SQL &amp; Schema Design</span>
+                        <span>Refactored</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-top">
+                        <span class="skill-icon">📮</span>
+                        <span class="skill-tag">TESTING</span>
+                    </div>
+                    <h3>Postman</h3>
+                    <p>Automating HTTP tests, inspecting payloads, headers, validating response codes, and mending
+                        broken endpoint collections.</p>
+                    <div class="skill-footer">
+                        <span>API Request Testing</span>
+                        <span>Daily Driver</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-top">
+                        <span class="skill-icon">🎮</span>
+                        <span class="skill-tag">GAME ENGINE</span>
+                    </div>
+                    <h3>Unreal Engine</h3>
+                    <p>Interactive 3D environments, character control systems, physics simulation, and rule-based visual
+                        scripting.</p>
+                    <div class="skill-footer">
+                        <span>3D Logic &amp; Blueprints</span>
+                        <span>Exploring</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-top">
+                        <span class="skill-icon">🌐</span>
+                        <span class="skill-tag">MARKUP</span>
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Semantic markup, template structuring, DOM integration, and connecting browser views to Flask
+                        endpoints.</p>
+                    <div class="skill-footer">
+                        <span>Web Structuring</span>
+                        <span>Standard</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="project" id="projects">
+            <p class="eyebrow">// PROMOTION HIGHLIGHT</p>
+            <h2>Featured Project: Online Book House</h2>
+            <p class="section-desc">A dedicated digital repository backend built with Flask and SQL.</p>
+
+            <div class="project-content">
+
+                <div class="project-left">
+                    <h3>Steps to Run Project</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Open Project Directory</strong>
+                            <code>cd online-book-house</code>
+                        </li>
+                        <li>
+                            <strong>Start Flask Server</strong>
+                            <code>flask run --port=5000</code>
+                        </li>
+                        <li>
+                            <strong>Open API in Postman</strong>
+                            <code>http://localhost:5000/api/books</code>
+                        </li>
+                    </ol>
+
+                    <div class="project-stats">
+                        <div class="stat-box">
+                            <span class="stat-num">100%</span>
+                            <span>Endpoints Tested</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">REST</span>
+                            <span>Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-right code-window">
+                    <div class="code-window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">online-book-house</span>
+                    </div>
+
+                    <div class="code-window-body">
+                        <aside class="file-tree">
+                            <ul>
+                                <li>📁 database</li>
+                                <li>📄 routes.py</li>
+                                <li>📄 app.py</li>
+                            </ul>
+                        </aside>
+
+                        <pre class="code-body"><code>from flask import Flask, jsonify
+app = Flask(__name__)
+
+@app.route("/api/books")
+def get_books():
+    return jsonify([])</code></pre>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="hobbies" id="interests">
+            <p class="eyebrow">// LIFESTYLE &amp; RECREATION</p>
+            <h2>How I Spend My Free Time</h2>
+            <p class="section-desc">
+                Beyond structured study, balance fuels creativity: algorithmic
+                experiments, high-immersion gaming worlds, and walking the avenues
+                of Rafsanjan.
+            </p>
+
+            <div class="hobbies-grid">
+
+                <article class="hobby-card">
+                    <img src="images/code.png" alt="Writing clean code on a laptop">
+                    <span class="hobby-tag">DEV</span>
+                    <h3>Writing Clean Code</h3>
+                    <p>Exploring Python routing, refining REST API routes, and inspecting mildly-critical service
+                        execution.</p>
+                    <span class="hobby-footer">🧭 Continuous Experimentation</span>
+                </article>
+
+                <article class="hobby-card">
+                    <img src="images/video game.png" alt="Gaming setup with multiple monitors">
+                    <span class="hobby-tag">DES</span>
+                    <h3>Playing Video Games</h3>
+                    <p>Passionate about deep gameplay loops, immersive 3D physics, inner architecture, and the
+                        storytelling mechanics of modern engines.</p>
+                    <span class="hobby-footer">🎮 Game Mechanics &amp; Unreal 4</span>
+                </article>
+
+                <article class="hobby-card">
+                    <img src="images/town.png" alt="City view of Rafsanjan at sunset">
+                    <span class="hobby-tag">EARN</span>
+                    <h3>Going to the Town</h3>
+                    <p>Taking outdoor walks around Rafsanjan, resetting focus, exploring in local inspiration, and
+                        discovering real-world perspectives.</p>
+                    <span class="hobby-footer">🌤️ Fresh Air &amp; Inspiration</span>
+                </article>
+
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact-left">
+                <p class="eyebrow">// CONNECT &amp; MESSAGE</p>
+                <h2>Let's Build Together</h2>
+                <p>Have an opportunity or just saying hi? Reach out anytime!</p>
+
+                <ul class="contact-info-list">
+                    <li><strong>GitHub</strong> github.com/Mohammad-reza-46</li>
+                    <li><strong>Location</strong> Rafsanjan, Iran</li>
                 </ul>
-            </details>
-        </section>
-        <section id="my-free-time">
-            <h2>My Free Time</h2>
-            <p>In my free time I:</p>
-            <ul>
-                <li>write code</li>
-                <li>play video games</li>
-                <li>go to the town</li>
-            </ul>
-        </section>
-        <section id="my-skills">
-            <h2>My Skills</h2>
-            <p>I can work with:</p>
-            <ul>
-                <li>Python</li>
-                <li>Flask</li>
-                <li>Database</li>
-                <li>HTML</li>
-                <li>Postman</li>
-                <li>Unreal Engine</li>
-            </ul>
-        </section>
-        <section id="my-code">
-            <h2>My Code</h2>
-            <p>I am working on an online book house.</p>
-            <p>Now I am building the backend, working with Postman and a database.</p>
-            <h3>Steps to run my project:</h3>
-            <ol>
-                <li>Open the project folder.</li>
-                <li>Start the Flask server.</li>
-                <li>Open the API in Postman.</li>
-            </ol>
-            <figure>
-                <img src="screenshot.png" alt="A screenshot of my code folder" width="600">
-                <figcaption>This is a screenshot of my code folder.</figcaption>
-            </figure>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <fieldset>
-                    <legend>Contact details</legend>
-                    <p>
-                        <label for="name">Your name:</label>
-                        <input type="text" id="name" name="name" placeholder="Your full name" required>
-                    </p>
-                    <p>
-                        <label for="email">Your email:</label>
-                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
-                    </p>
-                    <p>
-                        <label for="reason">Reason:</label>
-                        <select id="reason" name="reason">
-                            <option value="job">Job offer</option>
-                            <option value="question">A question</option>
-                            <option value="hello">Just saying hi</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="message">Your message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </p>
-                </fieldset>
-                <button type="submit">Send</button>
+            </div>
+
+            <form class="contact-form">
+                <h3>Send a Message</h3>
+
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Alex Turing">
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="alex@domain.com">
+
+                <div class="reason-group">
+                    <label><input type="radio" name="reason" value="job"> Job offer</label>
+                    <label><input type="radio" name="reason" value="question" checked> A question</label>
+                    <label><input type="radio" name="reason" value="hello"> Just saying hi</label>
+                </div>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Send Message</button>
             </form>
         </section>
+        <footer class="site-footer">
+            <p>Made with ❤️ by Mohammad Reza Ansari</p>
+            <div class="footer-links">
+                <a href="https://github.com/Mohammadreza-46/">GitHub</a>
+                <a href="mailto:ansarimohammadreza.2015@gmail.com">Email</a>
+            </div>
+            <p class="copyright">© 2025 Mohammad Reza Ansari. All rights reserved.</p>
+        </footer>
+
     </main>
-    <footer>
-        <p>Made by Mohammad Reza Ansari</p>
-        <p>
-            <a href="https://github.com/Mohammadreza-46/" target="_blank" rel="noopener">
-                My GitHub profile
-            </a>
-        </p>
-        <p>
-            You can also
-            <a href="mailto:ansarimohammadreza.2015@gmail.com">email me</a>.
-        </p>
-    </footer>
 </body>
 
 </html>
