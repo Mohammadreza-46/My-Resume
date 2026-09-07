@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Mohammad Reza Ansari, a young backend and Python developer from Iran.">
+    <meta name="description"
+        content="Portfolio of Mohammad Reza Ansari, a young backend and Python developer from Iran.">
     <title>Mohammad Reza | Ansari</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -298,11 +299,12 @@ def get_books():
                 <label for="email">Your Email</label>
                 <input type="email" id="email" name="email" placeholder="alex@domain.com">
 
-                <div class="reason-group">
+                <fieldset class="reason-group">
+                    <legend>Reason</legend>
                     <label><input type="radio" name="reason" value="job"> Job offer</label>
                     <label><input type="radio" name="reason" value="question" checked> A question</label>
                     <label><input type="radio" name="reason" value="hello"> Just saying hi</label>
-                </div>
+                </fieldset>
 
                 <label for="message">Your Message</label>
                 <textarea id="message" name="message" rows="4"></textarea>
